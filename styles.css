@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    padding: 50px;
+    padding: 0;
     color: #000;
     font-family: 'Lato', sans-serif;
 }
@@ -13,11 +13,11 @@ body {
     grid-template-columns: 300px 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "logo banner banner"
+        "banner banner banner"
         "nav nav nav"
         "main main side"
         "footer footer footer";
-    grid-gap: 4px;
+    grid-gap: 0px;
 }
 
 /* ---- End of grid setup ---- */
@@ -26,47 +26,43 @@ body {
 /* -000- Area styling -000- */
 
 .box {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #ddd;
+    padding: 10px;
+    border-radius: 0px;
+    background-color: #000000;
 }
 
 /* Area colouring... */
 
 /* logo, banner and footer background are the same */
-.logo, .banner, .footer {
-    background-color: #885566;  /* dark purple */
+.banner, .footer {
+    background-color: #292828;  /* dark purple */
 }
 
 /* Set font on dark areas to white */
-.logo, .banner, .side, .footer {
+.banner, .nav, .side, .footer {
     color: #fff;
 }
 
 /* Area specifics */
 
-.logo {
-    grid-area: logo;
-    padding: 0;
-    height: 199px;
-    width: 300px;
-    background-image: url();
-}
-
 .banner {
     grid-area: banner;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 110px;
+    height: 150px;
 }
 
 .nav {
     grid-area: nav;
-    background-color: #ddbb99;  /* Pale brown */
+    background-color: #888888;  /* Pale brown */
     font-size: 150%;
     text-align: center;
 }
 
 .main {
     grid-area: main;
-    background-color: #ffeedd;  /* very pale pink */
+    background-color: #e0e0e0;  /* very pale pink */
     border: solid 1px #ddbb99;
 }
 
@@ -88,13 +84,13 @@ h1, h2, h3, h4 {
 
 /* Navigation Links */
 .nav a {font-weight: bold;}
-.nav a:link, .nav a:visited {color: #885566;} /*purple */
+.nav a:link, .nav a:visited {color: #f8f7f6;} /*purple */
 .nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
 
 
 /* links in page */
 a {font-weight: bold;}
-a:link{color: #885566;} /*purple */
+a:link{color: #b749e2;} /*purple */
 a:visited{color: #907860;} /* grey / brown */
 a:hover{color: #604830;}    /* chocolate brown */
 
